@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/Users/Stephan/Desktop/Easy Calx/CalcModel.swift
 // Global variables for shopping list in discoutn calx
 
 var items = [String]()
@@ -16,6 +16,7 @@ var discountedPrices = [Double]()
 
 
 class Cart {
+    
     func addComma(inputValue: Double) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -107,6 +108,7 @@ class DiscountCalculation {
             let finalPriceFormatted = addComma(inputValue: finalPrice)
             
             return finalPriceFormatted
+            
         } else if segmentA == true && segmentB == true {
             discount /= 100
             additionalDiscount /= 100
